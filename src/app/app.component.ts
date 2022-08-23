@@ -8,10 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'my-site';
 
-  newTask: string ='';
-  tasksList: Array<string> = [];
 
-  addWork() {
-    this.tasksList.push(this.newTask)
   }
-}
