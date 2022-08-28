@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,  } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Car } from '../globals/Car';
+import { CarsService } from '../services/cars.service';
+
 
 @Component({
   selector: 'app-cars',
@@ -7,9 +11,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CarsComponent implements OnInit {
 
-  constructor() { }
+  public cars: any;
 
-  ngOnInit(): void {
+  constructor(private CarsService: CarsService) {}
+
+  ngOnInit() {
+    this.getCars();
   }
+
+  private getCars(): void {
+    this.CarsService.getCars().subscribe((car) => {
+      this.cars = car;
+
+    });
+  }
+
 
 }
