@@ -24,7 +24,7 @@ background-size:cover;
   color: white;
   padding: 30px;
   margin-bottom: 50px;
-  width: 60vw;
+  width: 40vw;
   z-index: 1;
   text-align: center;
 
@@ -45,13 +45,10 @@ background-size:cover;
 }
 
 .input-text {
-  width: 90%;
+  border:none;
+  border-radius:5px;
 }
 
-
-.col {
-
-  margin: 10px 0px 0px 5px;
+select, input{
+  padding-left: 10px;
 }
-
-

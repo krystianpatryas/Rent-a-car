@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+
 
 @Component({
   selector: 'app-contact',
@@ -11,5 +12,11 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  onSend() {
+    alert('Wiadomość została wysłana!')
+  }
+
+
 
 }

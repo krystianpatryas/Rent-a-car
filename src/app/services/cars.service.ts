@@ -9,7 +9,6 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CarsService {
 
-
   constructor(private http: HttpClient) {}
 
   public getCars():Observable<Car> {

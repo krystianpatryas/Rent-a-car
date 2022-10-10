@@ -1,1 +1,1 @@
-export const myUrl = 'https://my-json-server.typicode.com/typicode/demo/posts'
+export const myUrl = 'http://localhost:3000/cars'

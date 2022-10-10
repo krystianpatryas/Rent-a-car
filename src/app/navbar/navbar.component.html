@@ -1,25 +1,45 @@
 
 
-<nav class="nav navbar-hide-on-scroll fixed-top">
-  <div class="container">
-      <div class="logo">
-          <a href="#" routerLink="/" >   <img class = "icon" src="https://www.kindpng.com/picc/m/746-7467939_cars-logo-png-transparent-capital-automotive-reit-png.png"></a>
+<!-- <nav class="autohide nav  fixed-top">
+
+      <div class="logo ">
+          <a href="#" routerLink="/" >   <img class = "icon" src="https://nadasklep.pl/wp-content/uploads/2021/05/59db69be3752880e93e16efa.png"></a>
       </div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
       <div id="mainListDiv" class="main_list">
-          <ul class="navlinks">
-              <li><a href="" routerLink="/" routerLinkActive="active">Strona główna</a></li>
-              <li><a href="cars" routerLink="/cars" routerLinkActive="active">Nasza flota</a></li>
-              <li><a href="about-us" routerLink="/about-us" routerLinkActive="active">O Nas</a></li>
-              <li><a href="contact" routerLink="/contact" routerLinkActive="active">Kontakt</a></li>
+          <ul class="navlinks" >
+              <li><a  routerLink="/"  (click)="goToTop()">Strona główna</a></li>
+              <li><a  routerLink="/cars"  (click)="goToTop()">Nasza flota</a></li>
+              <li><a  routerLink="/about-us" (click)="goToTop()">O Nas</a></li>
+              <li><a  routerLink="/contact"  (click)="goToTop()">Kontakt</a></li>
           </ul>
       </div>
-      <span class="navTrigger">
-          <i></i>
-          <i></i>
-          <i></i>
-      </span>
+
+
+</nav> -->
+
+
+<nav class="navbar autohide">
+  <div class="brand-title"> <a href="#" routerLink="/" > Cars.pl  <img class = "icon" src="https://nadasklep.pl/wp-content/uploads/2021/05/59db69be3752880e93e16efa.png"></a> </div>
+  <a href="#" class="toggle-button">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </a>
+  <div class="navbar-links ">
+    <ul>
+      <li><a  routerLink="/"  (click)="goToTop()">Strona główna</a></li>
+              <li><a  routerLink="/cars"  (click)="goToTop()">Nasza flota</a></li>
+              <li><a  routerLink="/about-us" (click)="goToTop()">O Nas</a></li>
+              <li><a  routerLink="/contact"  (click)="goToTop()">Kontakt</a></li>
+    </ul>
   </div>
 </nav>
+
 
 
 <!-- <section class="home">

@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin:0;
   padding: 0;
-  
+
 }
 
 
@@ -32,16 +32,23 @@ img {
 .desc-car {
   margin:  100px;
   padding: 0px;
-  height: 350px;
+  height: 400px;
 
 }
 
 .desc-p {
   width: 55%;
+  font-size:18px;
+
 }
+
+.desc-p span {
+  font-weight: 700;
+}
+
 .description {
-    /* padding:  */
-  font-size: 13px;
+
+font-size: 13px;
 display:flex;
 justify-content:  center;
 align-items: center;
@@ -49,18 +56,17 @@ align-items: center;
 }
 
 .desc {
-
   text-align:center;
   text-transform: uppercase;
 }
 
 .description p {
-  margin-bottom: 100px;
+  margin: 50px 0px;
   line-height: 25px;
 }
 
 section {
-  margin: 0 200px;
+  justify-content: center;
 }
 
 .pic {

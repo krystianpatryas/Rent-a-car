@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -11,4 +11,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  @Input() goToTop() {
+    document.documentElement.scrollTop = 0;
+  }
+
   }
