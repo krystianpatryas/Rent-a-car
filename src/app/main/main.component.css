@@ -30,14 +30,14 @@ img {
 }
 
 .desc-car {
-  margin:  100px;
-  padding: 0px;
-  height: 400px;
+  margin:  20px 0px 0px 0 ;
+  padding: 15px;
+  width: 450px;
 
 }
 
 .desc-p {
-  width: 55%;
+  padding: 20px;
   font-size:18px;
 
 }
@@ -52,7 +52,6 @@ font-size: 13px;
 display:flex;
 justify-content:  center;
 align-items: center;
-
 }
 
 .desc {

@@ -1,23 +1,4 @@
-
-    <!-- <button class="btn black" (click)="goToMovies()">Back</button> -->
-
-
-
-
-    <!-- <div class="row row-cols-1 row-cols-md-2 g-4" *ngFor="let car of cars">
-      <div class="col">
-        <div class="card">
-          <img [src]="car.img" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
 <div class="container"></div>
-
    <div class="clearfix"
       *ngFor="let car of cars">
       <img [src]="car.img" class="m-3"/>
@@ -60,6 +41,5 @@
             <td>{{ car.maxspeed }}</td>
           </tr>
         </table>
-
         <button type="button" class="btn p-2 border-dark">Sprawdź dostępność w wybranym przez siebie terminie!</button>
 </div>
