@@ -5,7 +5,7 @@ body {
 .text-p {
   display:flex;
   flex-direction: column;
-  text-align: center;
+  text-align: justify;
   align-items: center;
 }
 .text {
@@ -54,5 +54,3 @@ h3 {
 .container-fluid {
   padding: 60px 0;
 }
-
-
