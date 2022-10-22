@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+
+}
+
+
+h3 {
+  background-color: rgba(167, 105, 54, 0.8);
+  padding: 10px 0;
+}
+
+.prizes {
+  margin: 70px 0 70px 0;
+  text-align:center;
+  text-transform: uppercase;
+}
+
+.container-fluid {
+  /* width: 100%; */
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+img {
+  margin: 0 50px 100px 0;
+}
+
+.desc-car {
+  /* margin:  20px 0px 0px 0 ; */
+  margin: 25px 25px 25px;
+  width: 450px;
+
+}
+
+.desc-p {
+
+  font-size:18px;
+  text-align: justify;
+
+}
+
+.desc-p span {
+  font-weight: 700;
+}
+
+.description {
+
+font-size: 13px;
+display:flex;
+justify-content:  center;
+align-items: center;
+}
+
+.desc {
+  text-align:center;
+  text-transform: uppercase;
+}
+
+.description p {
+  margin: 50px 0px;
+  line-height: 25px;
+}
+
+section {
+  justify-content: center;
+}
+
+.pic {
+  margin:0;
+}

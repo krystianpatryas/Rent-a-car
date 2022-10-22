@@ -1,0 +1,36 @@
+<!-- Wrapper container -->
+<div class="bgc">
+
+
+<div class="container py-4">
+
+  <!-- Bootstrap 5 starter form -->
+  <form id="contactForm" (ngSubmit)="onSend()" #f="ngForm" data-sb-form-api-token="API_TOKEN">
+
+    <!-- Name input -->
+    <div class="mb-3">
+      <h2 class="mb-4" style="color: black">Masz pytanie? Skontaktuj się z nami!</h2>
+      <label class="form-label" for="name">Imię i nazwisko</label>
+      <input class="form-control" id="name" type="text" placeholder="Wpisz imię i nazwisko..." #username="ngModel" name="username" ngModel required />
+      <span class="help-block" *ngIf="!username "></span>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" for="email">Adres e-mail</label>
+      <input class="form-control" id="email" type="email" placeholder="Wpisz adres e-mail..." name="email" ngModel email #email="ngModel" required />
+      <span class="help-block" *ngIf="!email.valid && email.touched"></span>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" for="message">Wiadomość</label>
+      <textarea class="form-control" id="message" type="text" placeholder="Wpisz swoją wiadomość..." style="height: 5rem;" #message="ngModel" name= "message" required ngModel ></textarea>
+      <span class="help-block" *ngIf="!message"></span>
+    </div>
+
+      <button class="btn btn-primary btn-md" id="submitButton" type="submit" [disabled]="!f.valid">Wyślij</button>
+
+
+  </form>
+
+</div>
+</div>
