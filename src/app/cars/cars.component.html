@@ -1,8 +1,10 @@
-<div class="container"></div>
-   <div class="clearfix"
-      *ngFor="let car of cars">
-      <img [src]="car.img" class="m-3"/>
-      <table>
+<div class="container-fluid ">
+  <div class="col-xs-10 col-lg-12 ">
+    <div class="group ">
+      <div class="item "
+           *ngFor="let car of cars">
+        <img [src]="car.img" class=""/>
+        <table>
           <tr>
             <td class="name">Marka:</td>
             <td>{{ car.brand }}</td>
@@ -41,5 +43,14 @@
             <td>{{ car.maxspeed }}</td>
           </tr>
         </table>
-        <button type="button" class="btn p-2 border-dark">Sprawdź dostępność w wybranym przez siebie terminie!</button>
+        <div class="d-flex justify-content-center w-100">
+        <button type="button" class="btn btn-primary p-2 border-dark">Sprawdź dostępność w wybranym przez siebie terminie!</button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
 </div>
+
