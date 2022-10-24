@@ -6,42 +6,39 @@
 
 
 .home {
-  width: 100%;
   height: 100vh;
   background-image: url(https://greatloveart.com/wp-content/uploads/2021/02/lamborghini-wallpaper-hd-1080p.jpg);
   background-position: center top;
-background-size:cover;
+  background-size:cover;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
 .image-text {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
   background-color: rgba(167, 105, 54, 0.8);
   border-radius: 20px;
   color: white;
   padding: 30px;
   margin-bottom: 50px;
-  width: 40vw;
   z-index: 1;
   text-align: center;
-
 }
 
 .image-text h3 {
   margin-bottom: 40px;
 }
 
-.col-mb3 i {
+i {
   color:black;
-  margin: 5px;
+  margin: 3px;
 }
 
 .input-group-text {
   padding: 10px;
   background-color: rgba(148, 103, 12, 0.6);
+  min-width: 46px;
 }
 
 .input-text {
