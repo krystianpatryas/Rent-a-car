@@ -1,28 +1,20 @@
-
-
-
-
-
-
-  <div class="jumbotron text-center">
+<div class="jumbotron">
+  <div class="col-lg-8 col-md-8 col-11">
     <div class="text">
-    <h1>Cars</h1>
-    <p>Zapisz się do newsletter'a!</p>
-
-    <form>
-      <div class="input-group">
-        <input type="email" class="form-control" size="50" placeholder="Podaj adres e-mail..." required>
-        <div class="input-group-btn">
-          <button type="button" class="btn btn-danger">Subskrybuj</button>
+      <h1>Cars</h1>
+        <p>Zapisz się do newsletter'a!</p>
+          <form>
+            <div class="input-group">
+              <input type="email" class="form-control" size="50" placeholder="Podaj adres e-mail..." required>
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-danger">Subskrybuj</button>
         </div>
       </div>
     </form>
   </div>
   </div>
-
-  <!-- Container (About Section) -->
-  <div id="about" class="container-fluid">
-      <h2 class="text-center">O firmie Cars</h2>
+</div>
+      <h2 class="text-center mt-5">O firmie Cars</h2>
       <div class="text-p">
         <br>
         <h3 class="col-11 text-center" >JESTEŚMY PO TO BY SPEŁNIAĆ TWOJE OCZEKIWANIA!!!</h3><br>
@@ -39,7 +31,10 @@
               a przede wszystkim preferencyjne ceny dla każdego.</li>
           </ul>
            </span>
-        <br><a routerLink="/contact" (click)="goToTop()"><button class="btn  btn-primary border-dark btn-lg" >Odezwij się do nas!</button></a>
+        <br>
+        <a routerLink="/contact" (click)="goToTop()">
+          <button class="btn btn-primary border-dark btn-lg mb-4" >Odezwij się do nas!</button>
+        </a>
 
 
 
