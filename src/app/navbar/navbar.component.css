@@ -32,7 +32,7 @@ body {
 .navbar {
   display: flex;
   position: fixed;
-  height: 70px;
+  height: 60px;
   width: 100%;
   justify-content: space-between;
   align-items: center;

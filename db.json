@@ -4,14 +4,17 @@
     "id": 1,
     "brand": "BMW",
     "model": "M4",
-    "year": "2016",  
+    "year": "2016",
     "img": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImllM25ubDFvdGh6YzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJwIjoiMTAsLTEwIiwiYSI6IjAifV19.Lp6lNMJ2oyy-ebS6Q4oI2nVaKZvoewYTG4vPFzc7KuA/image;s=1080x720",
     "description": "brak limitu kilometrów w Polsce*, podstawowe ubezpieczenie, pełna ochrona w atrakcyjnej cenie",
     "engine": "3.0 TwinTurbo",
     "power": "450 km",
     "time": "3,7 sekundy do 100 km/h",
     "gearbox": "Automatyczna 8-biegowa",
-    "maxspeed": "310 km/h"
+    "maxspeed": "310 km/h",
+    "date-start" : "2020-01-01",
+    "date-end" : "2030-12-31",
+    "town": "Kraków"
 },
 
     {
@@ -84,7 +87,7 @@
     "gearbox": "Automatyczna 8-biegowa",
     "maxspeed": "305 km/h"
      },
-     
+
      {
     "id": 7,
     "brand": "Ford",
@@ -97,7 +100,7 @@
     "time": "4,5 sekundy do 100 km/h",
     "gearbox": "Manualna 6-biegowa",
     "maxspeed": "290 km/h"
-     },  
+     },
 
      {
     "id": 8,
@@ -111,7 +114,7 @@
     "time": "4,0 sekundy do 100 km/h",
     "gearbox": "Automatyczna 8-biegowa",
     "maxspeed": "295 km/h"
-     }, 
+     },
 
      {
     "id": 9,
@@ -125,7 +128,7 @@
     "time": "4,2 sekundy do 100 km/h",
     "gearbox": "Automatyczna 7-biegowa",
     "maxspeed": "290 km/h"
-     }, 
+     },
 
      {
     "id": 10,
@@ -167,8 +170,8 @@
     "time": "5.9 sekundy do 100 km/h",
     "gearbox": "Manualna 6-biegowa",
     "maxspeed": "244 km/h"
-     }  
-    
-        
-    
+     }
+
+
+
     ]}
