@@ -1,6 +1,6 @@
 import { Component, OnInit,  } from '@angular/core';
 import { Car } from '../globals/Car'
-import { map, pipe } from 'rxjs';
+import { map, Observable, pipe } from 'rxjs';
 import { CarsService } from '../services/cars.service';
 
 @Component({
@@ -9,31 +9,14 @@ import { CarsService } from '../services/cars.service';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
+  town: string = 'Wybierz miejsce odbioru auta...';
 
-
-  // format w konsoli to RRRR-MM-DD
-  check() {
-
-    // const startDate = this.date.dateStart
-    // const endDate = this.date.dateEnd
-
-    // if(startDate < endDate) {
-    //   console.log('yes')
-    // } else {
-    //   console.log('no')
-    // }
-
-    // this.carsService.getCars().subscribe(cars => {
-    //   this.car = cars;
-    //   this.car.map((x: { filter: (arg0: boolean) => any; }) => x.filter(this.car.dateStart > '2019-01-01'))
-
-  }
-
-
-
-
-  constructor(private carsService: CarsService) { }
+  constructor(public carsService: CarsService) { }
 
   ngOnInit(): void {
-}
+  }
+
+  getTown(town: string) {
+    this.carsService.getTowns(town);
+  }
 }

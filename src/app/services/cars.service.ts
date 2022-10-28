@@ -9,16 +9,23 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CarsService {
 
+
   constructor(private http: HttpClient) {}
 
   public getCars():Observable<Car> {
     return this.http.get<Car>(myUrl)
   }
 
-  // getCarsFromTown(town: string): Observable<Car> {
-  //   return this.getCars().pipe(
-  //     map(cars => cars.filter((car: string) => car.town === town))
-  //   );
-  // }
+ public getTowns(town: string)  {
+    return this.getCars().pipe(
+      map(car => {
+        if(car.town == town) {
+          console.log('oh right')
+        } else {
+          console.log('noooo')
+        }
+})
 
+
+)}
 }

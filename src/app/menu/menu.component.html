@@ -7,14 +7,14 @@
       <h3 >Wynajmij auto w największej wypożyczalni samochodów w Polsce </h3>
 
       <div class="input-group mb-3">
-        <span class="input-group-text " id="basic-addon1"><i class="fa-solid fa-map-location-dot"></i></span>
-        <select class="form-select" id="inputGroupSelect01 ">
+        <span class="input-group-text " id="basic-addon1"><i class="fa-solid fa-map-location-dot" ></i></span>
+        <select class="form-select" id="inputGroupSelect01 " [(ngModel)]="town">
           <option selected> Wybierz miejsce odbioru auta...</option>
-          <option value="1">Kraków</option>
-          <option value="2">Warszawa</option>
-          <option value="3">Poznań</option>
-          <option value="4">Wrocław</option>
-          <option value="5">Gdańsk</option>
+          <option>Kraków</option>
+          <option>Warszawa</option>
+          <option>Poznań</option>
+          <option>Wrocław</option>
+          <option>Gdańsk</option>
         </select>
       </div>
 
@@ -27,7 +27,7 @@
         <input class= "input-text col" type="date">
       </div>
     <br>
-    <button type="button" class="btn btn-secondary p-2 border-light" (click)="check()" >Zatwierdź</button>
+    <button type="button" class="btn btn-secondary p-2 border-light"  >Zatwierdź</button>
     </div>
     </div>
   </div>
