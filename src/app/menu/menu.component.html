@@ -8,7 +8,7 @@
 
       <div class="input-group mb-3">
         <span class="input-group-text " id="basic-addon1"><i class="fa-solid fa-map-location-dot" ></i></span>
-        <select class="form-select" id="inputGroupSelect01 " [(ngModel)]="town">
+        <select class="form-select" id="inputGroupSelect01 " #tw [(ngModel)]="town">
           <option selected> Wybierz miejsce odbioru auta...</option>
           <option>Kraków</option>
           <option>Warszawa</option>
@@ -27,7 +27,7 @@
         <input class= "input-text col" type="date">
       </div>
     <br>
-    <button type="button" class="btn btn-secondary p-2 border-light"  >Zatwierdź</button>
+    <button type="button" class="btn btn-secondary p-2 border-light" (click)="sendTown()" >Zatwierdź</button>
     </div>
     </div>
   </div>

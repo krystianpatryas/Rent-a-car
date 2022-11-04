@@ -2,6 +2,7 @@ import { Component, OnInit,  } from '@angular/core';
 import { Car } from '../globals/Car'
 import { map, Observable, pipe } from 'rxjs';
 import { CarsService } from '../services/cars.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -10,13 +11,20 @@ import { CarsService } from '../services/cars.service';
 })
 export class MenuComponent implements OnInit {
   town: string = 'Wybierz miejsce odbioru auta...';
-
-  constructor(public carsService: CarsService) { }
+  filterStatus = true;
+  constructor(public carsService: CarsService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  getTown(town: string) {
-    this.carsService.getTowns(town);
+  sendTown() {
+    this.carsService.townSubject.next(this.town);
+    console.log('Dane z main = ' + this.town)
+    this.getStatus();
+    this.router.navigate(['/cars'])
+  }
+
+  getStatus() {
+    this.carsService.filterStatus.next(this.filterStatus)
   }
 }
