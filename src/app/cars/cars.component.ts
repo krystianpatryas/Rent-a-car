@@ -22,6 +22,10 @@ export class CarsComponent implements OnInit {
     if(this.filterStatus == true) {
       this.getTown();
       this.getFilteredCars();
+      this.CarsService.carsSubject.subscribe(filteredCars => {
+        this.cars = filteredCars;
+        // console.log(this.cars)
+      })
     } else {
       this.getCars();
     }
@@ -36,13 +40,12 @@ export class CarsComponent implements OnInit {
   private getTown() {
     this.CarsService.townSubject.subscribe((towns) => {
       this.town = towns;
-      console.log('Dane z getTown = ' + this.town);
+      console.log(this.town + ' z getTown ts')
     })
-    console.log(this.filterStatus);
   }
 
   private getFilteredCars() {
-    this.CarsService.getFilteredCars().subscribe(car => this.cars = car);
+    this.CarsService.getFilteredCars().subscribe(inf => this.cars = inf);
   }
 
   private getActualStatus() {
