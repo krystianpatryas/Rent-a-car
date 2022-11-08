@@ -12,29 +12,38 @@ export class CarsService {
   filterStatus = new Subject<boolean>();
   carsSubject = new Subject<Car[]>();
   town: string;
-  cars: Car[];
+  cars: Car[] = [];
 
   constructor(private http: HttpClient) {}
 
   public getCars():Observable<Car[]> {
+    console.log(this.http.get<Car[]>(myUrl));
     return this.http.get<Car[]>(myUrl);
+
   }
 
   public getFilteredCars() {
-    this.getTown();
+    // this.getTown();
+    return this.getCars()
+      .pipe(map(car => {
+      car.filter(car => {
+        car.town === 'Kraków';
+        // console.log(car);
 
-    return this.getCars().pipe(map((car) => {
-      for(let i=0; i < 12; i++) {
+      });
+     }))
+      // for(let i=0; i < 12; i++) {
 
-        if (car[i].town === this.town) {
-          this.cars.push(car[i]);
-        } else {
-           console.log('błąd')
-          }
-        this.carsSubject.next(this.cars);
-      }
-    }));
-  }
+      //   if (car[i].town === this.town) {
+      //     this.cars.push(car[i]);
+      //     console.log('przeszło');
+      //   } else {
+      //      console.log('błąd')
+      //     }
+        // this.carsSubject.next(this.cars);
+      // }
+    };
+
 
   getTown() {
     this.townSubject.subscribe(town => this.town = town)
