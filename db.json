@@ -1,7 +1,6 @@
 {
-    "cars": [{
-
-    "id": 1,
+    "cars": [
+    {
     "brand": "BMW",
     "model": "M4",
     "year": "2016",
@@ -18,7 +17,7 @@
 },
 
     {
-    "id": 2,
+
     "brand": "BMW",
     "model": "M3",
     "year": "2015",
@@ -35,7 +34,7 @@
     },
 
     {
-    "id": 3,
+
     "brand": "BMW",
     "model": "M5",
     "year": "2016" ,
@@ -52,7 +51,7 @@
     },
 
     {
-    "id": 4,
+
     "brand": "Audi ",
     "model": "RS3",
     "year": "2018",
@@ -69,7 +68,7 @@
     },
 
     {
-    "id": 5,
+
     "brand": "Audi",
     "model": "RS4",
     "year": "2016",
@@ -87,7 +86,7 @@
     },
 
     {
-    "id": 6,
+
     "brand": "Audi",
     "model": "RS5",
     "year": "2017",
@@ -104,7 +103,7 @@
      },
 
      {
-    "id": 7,
+
     "brand": "Ford",
      "model": "Mustang",
     "year": "2020",
@@ -120,8 +119,7 @@
     "town": "Kraków"
      },
 
-     {
-    "id": 8,
+    {
     "brand": "Dodge",
     "model": "Challenger",
     "year": "2017",
@@ -138,7 +136,7 @@
      },
 
      {
-    "id": 9,
+
     "brand": "Dodge",
     "model": "Charger",
     "year": "2017",
@@ -155,7 +153,7 @@
      },
 
      {
-    "id": 10,
+
     "brand": "Nissan",
     "model": "Skyline R34",
     "year": "1999",
@@ -172,7 +170,7 @@
     },
 
     {
-    "id": 11,
+
     "brand": "Toyota",
     "model": "Supra",
     "year": "1999",
@@ -189,7 +187,7 @@
     },
 
     {
-    "id": 12,
+
     "brand": "Nissan",
     "model": "S15",
     "year": "1995",
