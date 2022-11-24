@@ -32,12 +32,7 @@ app.use((req, res, next) => {
 });
 
 app.get("/cars", (req, res, next) => {
-  // Car.find()
-  //   .then((cars) => res.json(cars))
-  //   .catch((err) => console.log(err));
+  Car.find().then((cars) => res.json(cars));
 });
-
-//insertować dane do mongodb
-//wyczytać je
 
 module.exports = app;
