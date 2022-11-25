@@ -32,7 +32,12 @@ app.use((req, res, next) => {
 });
 
 app.get("/cars", (req, res, next) => {
-  Car.find().then((cars) => res.json(cars));
+  Car.find({
+    town: "Kraków",
+    // wpisać req.body.town czy coś takiego
+  }).then((cars) => {
+    res.json(cars);
+  });
 });
 
 module.exports = app;

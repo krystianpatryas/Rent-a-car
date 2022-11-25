@@ -16,10 +16,20 @@ export class CarsService {
   constructor(private http: HttpClient) {}
 
   public getCars(): Observable<Car[]> {
-    return this.http.get<Car[]>(myUrl);
+    return this.http.get<Car[]>(myUrl)
   }
 
-  getTown() {
+  public getFilteredCars(): Observable<Car[]> {
+    this.getTown();
+    return this.http.get<Car[]>(myUrl).pipe(
+      map((cars) => cars.filter(car => car.town === this.town))
+
+    )
+
+
+  }
+
+  public getTown() {
     this.townSubject.subscribe((town) => (this.town = town));
     console.log('Dane z getTown serwisu = ' + this.town);
   }

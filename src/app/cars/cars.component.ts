@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { map } from 'rxjs';
+import { map, pipe, filter } from 'rxjs';
 import { CarsService } from '../services/cars.service';
 import { Car } from '../globals/Car';
 
@@ -16,43 +16,45 @@ export class CarsComponent implements OnInit {
   constructor(private CarsService: CarsService) {}
 
   ngOnInit() {
-    this.getCars();
+    this.filterStatus ? this.filterCars() : this.getCars();
   }
 
   private getCars() {
-    this.CarsService.getCars().subscribe((cars) => {
+    return this.CarsService.getCars().subscribe((cars) => {
       this.cars = cars;
     });
   }
 
-  // private filterCars(filterProperty: string) {
-    // return this.cars.filter
-
+  private filterCars() {
+    return this.CarsService.getFilteredCars().subscribe((cars) => {
+      this.cars = cars;
+    });
   }
-  // private getFilteredCars(town: string) {
-  //   this.CarsService.getCars(town)
-  //     // .pipe(
-  //     //   map((cars) => {
-  //     //
-  //     //     })
-  //     //   )
-  //     //
-  //     .subscribe((cars) => {
-  //       cars = cars.filter((car) => car.town === this.town);
-  //       this.cars = cars;
-  //     });
-  // }
+}
+// private getFilteredCars(town: string) {
+//   this.CarsService.getCars(town)
+//     // .pipe(
+//     //   map((cars) => {
+//     //
+//     //     })
+//     //   )
+//     //
+//     .subscribe((cars) => {
+//       cars = cars.filter((car) => car.town === this.town);
+//       this.cars = cars;
+//     });
+// }
 
-  // private filterCarByTown() {
-  //   this.CarsService.townSubject.subscribe((town) => {
-  //     this.town = town;
-  //     console.log(this.town + ' z getTown ts');
-  //   });
-  // }
+// private filterCarByTown() {
+//   this.CarsService.townSubject.subscribe((town) => {
+//     this.town = town;
+//     console.log(this.town + ' z getTown ts');
+//   });
+// }
 
-  // private getActualStatus() {
-  //   this.CarsService.filterStatus.subscribe(
-  //     (status) => (this.filterStatus = status)
-  //   );
-  // }
+// private getActualStatus() {
+//   this.CarsService.filterStatus.subscribe(
+//     (status) => (this.filterStatus = status)
+//   );
+// }
 // }
