@@ -35,9 +35,11 @@ app.get("/cars", (req, res, next) => {
   Car.find({
     town: "Kraków",
     // wpisać req.body.town czy coś takiego
-  }).then((cars) => {
-    res.json(cars);
-  });
+  })
+    .then((cars) => {
+      res.json(cars);
+    })
+    .then(console.log(req.body));
 });
 
 module.exports = app;
