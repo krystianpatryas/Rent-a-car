@@ -9,13 +9,11 @@ import { Router } from '@angular/router';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css']
 })
-export class MenuComponent implements OnInit {
+export class MenuComponent   {
   town: string = 'Wybierz miejsce odbioru auta...';
   filterStatus = true;
-  constructor(public carsService: CarsService, private router: Router) { }
 
-  ngOnInit(): void {
-  }
+  constructor(public carsService: CarsService, private router: Router) { }
 
   sendTown() {
     this.carsService.townSubject.next(this.town);
