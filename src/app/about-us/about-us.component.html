@@ -5,11 +5,12 @@
         <p>Zapisz się do newsletter'a!</p>
           <form>
             <div class="input-group">
-              <input type="email" class="form-control" size="50" placeholder="Podaj adres e-mail..." required>
+              <input type="email" id="email" class="form-control" size="50" placeholder="Podaj adres e-mail..." [value]="emailValue" name="email" #email="ngModel" ngModel required>
                 <div class="input-group-btn">
-                  <button type="button" class="btn btn-danger">Subskrybuj</button>
+                  <button type="button" class="btn btn-danger" [disabled]="!email.valid" (click)="subscribe()" >Subskrybuj</button>
         </div>
       </div>
+      <p class="display" id="sub-text" >Subskrypcja została potwierdzona!</p>
     </form>
   </div>
   </div>

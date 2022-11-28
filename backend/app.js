@@ -31,7 +31,9 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get("/cars", (req, res, next) => {
+app.get("/cars?town=krakow", (req, res, next) => {
+  console.log(req.query.town);
+
   Car.find({
     town: "Kraków",
     // wpisać req.body.town or smth

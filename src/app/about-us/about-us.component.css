@@ -44,3 +44,15 @@ h3 {
   justify-content: center;
   align-items: center;
 }
+
+#sub-text {
+  margin-top: 20px;
+  color: rgb(255, 230, 0);
+  font-size: 20px;
+  font-weight: bold;
+  /* visibility:hidden; */
+}
+
+.display {
+  display: none;
+}

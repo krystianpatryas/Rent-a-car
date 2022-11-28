@@ -1,3 +1,4 @@
+import { BinaryOperatorExpr } from '@angular/compiler';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -6,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./about-us.component.css']
 })
 export class AboutUsComponent implements OnInit {
-
+  emailValue: string;
   constructor() { }
 
   ngOnInit(): void {
@@ -14,6 +15,13 @@ export class AboutUsComponent implements OnInit {
 
    goToTop() {}
 
+  subscribe() {
+    const paragraph = document.getElementById('sub-text');
+    if (paragraph != null) {
+      paragraph.classList.toggle('display');
+      this.emailValue = '';
+    }
 
+  }
 
 }
