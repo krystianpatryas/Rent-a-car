@@ -30,8 +30,8 @@ app.use((req, res, next) => {
   );
   next();
 });
-
-app.get("/cars?town=krakow", (req, res, next) => {
+// ?town=krakow
+app.get("/cars", (req, res, next) => {
   console.log(req.query.town);
 
   Car.find({

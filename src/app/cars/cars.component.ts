@@ -16,7 +16,8 @@ export class CarsComponent implements OnInit {
   constructor(private CarsService: CarsService) {}
 
   ngOnInit() {
-    this.filterStatus ? this.filterCars() : this.getCars();
+
+    this.filterStatus ? (this.CarsService.getTown(), this.filterCars() ) : this.getCars();
   }
 
   private getCars() {

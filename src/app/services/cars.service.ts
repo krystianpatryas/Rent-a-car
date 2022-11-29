@@ -19,13 +19,20 @@ export class CarsService {
     return this.http.get<Car[]>(myUrl);
   }
 
+  // public getFilteredCars(): Observable<Car[]> {
+  //   this.getTown();
+  //   return this.getCars()
+  //     .pipe(
+  //       map((cars) => cars.filter(car => car.town === this.town))
+  //     )
+  //     //dopracować getTown serwisu = undefined
+
+  // }
+
   public getFilteredCars(): Observable<Car[]> {
-    this.getTown();
-    return this.getCars()
-      .pipe(
-        map((cars) => cars.filter(car => car.town === this.town))
-      )
-      //dopracować getTown serwisu = undefined
+    return this.http
+      .get<Car[]>(myUrl)
+      .pipe(map((cars) => cars.filter((car) => car.town === this.town)));
   }
 
   public getTown() {
@@ -33,11 +40,3 @@ export class CarsService {
     console.log('Dane z getTown serwisu = ' + this.town);
   }
 }
-
-
-// public getFilteredCars(): Observable<Car[]> {
-//   this.getTown();
-//   return this.http.get<Car[]>(myUrl).pipe(
-//     map((cars) => cars.filter(car => car.town === this.town))
-//   )
-// }
