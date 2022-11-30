@@ -31,17 +31,19 @@ app.use((req, res, next) => {
   next();
 });
 // ?town=krakow
-app.get("/cars", (req, res, next) => {
-  console.log(req.query.town);
+app.get("/cars?town=Kraków", (req, res, next) => {
+  // console.log(req.query);
 
-  Car.find({
-    town: "Kraków",
-    // wpisać req.body.town or smth
-  })
-    .then((cars) => {
-      res.json(cars);
-    })
-    .then(console.log(req.body));
+  let town = req.query.town
+  res.json(town)
+
+  // Car.find({
+  //   town: req.query.town,
+  //   // wpisać req.body.town or smth
+  // })
+  //   .then((cars) => {
+  //     res.json(cars);
+  //   })
 });
 
 module.exports = app;
