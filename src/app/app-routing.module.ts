@@ -13,15 +13,17 @@ import { MenuComponent } from './menu/menu.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent},
-  { path: 'about-us', component: AboutUsComponent},
-  { path: 'contact', component: ContactComponent},
-  { path: 'cars', component: CarsComponent},
-  { path: '**', component: ErrorComponent}
+  { path: '', component: HomeComponent },
+  { path: 'about-us', component: AboutUsComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'cars', component: CarsComponent },
+  { path: '**', component: ErrorComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forRoot(routes, { scrollPositionRestoration: 'enabled' }),
+  ],
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
