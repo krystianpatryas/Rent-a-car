@@ -1,7 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-
 const Car = require("./models/post");
 const { log } = require("util");
 const { db } = require("./models/post");
@@ -30,20 +29,19 @@ app.use((req, res, next) => {
   );
   next();
 });
-// ?town=krakow
-app.get("/cars?town=Kraków", (req, res, next) => {
-  // console.log(req.query);
 
-  let town = req.query.town
-  res.json(town)
+app.get("/cars", (req, res, next) => {
 
-  // Car.find({
-  //   town: req.query.town,
-  //   // wpisać req.body.town or smth
-  // })
-  //   .then((cars) => {
-  //     res.json(cars);
-  //   })
+console.log(req.query)
+
+  Car.find({
+    town: req.query.town,
+    dateStart: req.query.dateStart,
+    dateEnd: req.query.dateEnd
+  })
+    .then((cars) => {
+      res.json(cars);
+    })
 });
 
 module.exports = app;

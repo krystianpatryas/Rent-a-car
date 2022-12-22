@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { map, pipe, filter } from 'rxjs';
 import { CarsService } from '../services/cars.service';
-import { Car } from '../globals/Car';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-cars',
@@ -11,51 +10,23 @@ import { Car } from '../globals/Car';
 export class CarsComponent implements OnInit {
   public cars: any;
   public town: any;
-  filterStatus = true;
+  public dateStart: any;
+  public dateEnd: any;
 
-  constructor(private CarsService: CarsService) {}
+  constructor(private CarsService: CarsService, private route: ActivatedRoute) {}
 
   ngOnInit() {
-
-    this.filterStatus ? (this.CarsService.getTown(), this.filterCars() ) : this.getCars();
-  }
-
-  private getCars() {
-    return this.CarsService.getCars().subscribe((cars) => {
-      this.cars = cars;
+    this.route.queryParams.subscribe(params => {
+      this.town = params['town'];
+      this.dateStart = params['dateStart'];
+      this.dateEnd = params['dateEnd'];
     });
+    this.getCars(this.town, this.dateStart, this.dateEnd);
   }
 
-  private filterCars() {
-    return this.CarsService.getFilteredCars().subscribe((cars) => {
+  private getCars(town?: string, dateStart?: string, dateEnd?: string ) {
+    return this.CarsService.getCars(town, dateStart, dateEnd).subscribe((cars) => {
       this.cars = cars;
     });
   }
 }
-// private getFilteredCars(town: string) {
-//   this.CarsService.getCars(town)
-//     // .pipe(
-//     //   map((cars) => {
-//     //
-//     //     })
-//     //   )
-//     //
-//     .subscribe((cars) => {
-//       cars = cars.filter((car) => car.town === this.town);
-//       this.cars = cars;
-//     });
-// }
-
-// private filterCarByTown() {
-//   this.CarsService.townSubject.subscribe((town) => {
-//     this.town = town;
-//     console.log(this.town + ' z getTown ts');
-//   });
-// }
-
-// private getActualStatus() {
-//   this.CarsService.filterStatus.subscribe(
-//     (status) => (this.filterStatus = status)
-//   );
-// }
-// }
