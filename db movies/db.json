@@ -1,0 +1,210 @@
+{
+    "cars": [{
+
+    "id": 1,
+    "brand": "BMW",
+    "model": "M4",
+    "year": "2016",
+    "img": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImllM25ubDFvdGh6YzItT1RPTU9UT1BMIiwidyI6W3siZm4iOiJ3ZzRnbnFwNnkxZi1PVE9NT1RPUEwiLCJzIjoiMTYiLCJwIjoiMTAsLTEwIiwiYSI6IjAifV19.Lp6lNMJ2oyy-ebS6Q4oI2nVaKZvoewYTG4vPFzc7KuA/image;s=1080x720",
+    "description": "brak limitu kilometrów w Polsce*, podstawowe ubezpieczenie, pełna ochrona w atrakcyjnej cenie",
+    "engine": "3.0 TwinTurbo",
+    "power": "450 km",
+    "time": "3,7 sekundy do 100 km/h",
+    "gearbox": "Automatyczna 8-biegowa",
+    "maxspeed": "310 km/h",
+    "date-start" : "2020-01-01",
+    "date-end" : "2030-12-31",
+    "town": "Kraków"
+},
+
+    {
+    "id": 2,
+    "brand": "BMW",
+    "model": "M3",
+    "year": "2015",
+    "img": "https://cdn.prod.www.spiegel.de/images/9ef57514-1be0-46a7-89b1-8bec131a9a53_w1600_r1.5_fpx57.33_fpy50.jpg",
+    "description": "brak limitu kilometrów w Polsce*, podstawowe ubezpieczenie, pełna ochrona w atrakcyjnej cenie",
+    "engine": "3.0 TwinTurbo",
+    "power": "430 km",
+    "time": "4,2 sekundy do 100 km/h",
+    "gearbox": "Automatyczna 7-biegowa",
+    "maxspeed": "290 km/h",
+    "date-start" : "2020-01-01",
+    "date-end" : "2030-12-31",
+    "town": "Kraków"
+    },
+
+    {
+    "id": 3,
+    "brand": "BMW",
+    "model": "M5",
+    "year": "2016" ,
+    "img" : "https://cdn.car-recalls.eu/wp-content/uploads/2020/04/bmw-m5-2016-recall.jpg",
+    "description": "brak limitu kilometrów w Polsce*, podstawowe ubezpieczenie, pełna ochrona w atrakcyjnej cenie",
+    "engine": "4.0 TwinTurbo",
+    "power": "510 km",
+    "time": "3,5 sekundy do 100 km/h",
+    "gearbox": "Automatyczna 8-biegowa",
+    "maxspeed": "315 km/h",
+    "date-start" : "2020-01-01",
+    "date-end" : "2030-12-31",
+    "town": "Kraków"
+    },
+
+    {
+    "id": 4,
+    "brand": "Audi ",
+    "model": "RS3",
+    "year": "2018",
+    "img": "https://images.clickdealer.co.uk/vehicles/4359/4359047/large1/97049406.jpg",
+    "description": "brak limitu kilometrów w Polsce*, podstawowe ubezpieczenie, pełna ochrona w atrakcyjnej cenie",
+    "engine": "2.5 TwinTurbo",
+    "power": "370 km",
+    "time": "4,1 sekundy do 100 km/h",
+    "gearbox": "Automatyczna 7-biegowa",
+    "maxspeed": "295 km/h",
+    "date-start" : "2020-01-01",
+    "date-end" : "2030-12-31",
+    "town": "Kraków"
+    },
+
+    {
+    "id": 5,
+    "brand": "Audi",
+    "model": "RS4",
+    "year": "2016",
+    "img": "https://www.motonews.pl/autoblog/photos/2017/11/Audi-RS4-Avant_10.jpg",
+    "description": "brak limitu kilometrów w Polsce*, podstawowe ubezpieczenie, pełna ochrona w atrakcyjnej cenie",
+    "engine": "2.5 TwinTurbo",
+    "power": "445km",
+    "time": "4,3 sekundy do 100 km/h",
+    "gearbox": "Manualna 6-biegowa",
+    "maxspeed": "285 km/h",
+    "date-start" : "2020-01-01",
+    "date-end" : "2030-12-31",
+    "town": "Kraków"
+
+    },
+
+    {
+    "id": 6,
+    "brand": "Audi",
+    "model": "RS5",
+    "year": "2017",
+    "img": "https://m.autokult.pl/audi-rs5-coupe-test-mari-e69dd09,910,500,0,0.jpg",
+    "description": "brak limitu kilometrów w Polsce*, podstawowe ubezpieczenie, pełna ochrona w atrakcyjnej cenie",
+    "engine": "3.0 BiTurbo",
+    "power": "425 km",
+    "time": "4,5 sekundy do 100 km/h",
+    "gearbox": "Automatyczna 8-biegowa",
+    "maxspeed": "305 km/h",
+    "date-start" : "2020-01-01",
+    "date-end" : "2030-12-31",
+    "town": "Kraków"
+     },
+
+     {
+    "id": 7,
+    "brand": "Ford",
+     "model": "Mustang",
+    "year": "2020",
+    "img": "https://www.wyborkierowcow.pl/wp-content/uploads/2021/06/ford-mustang-cennik-2022-otwarcie.jpg",
+    "description": "brak limitu kilometrów w Polsce*, podstawowe ubezpieczenie, pełna ochrona w atrakcyjnej cenie",
+    "engine": "5.0",
+    "power": "423 km",
+    "time": "4,5 sekundy do 100 km/h",
+    "gearbox": "Manualna 6-biegowa",
+    "maxspeed": "290 km/h",
+    "date-start" : "2020-01-01",
+    "date-end" : "2030-12-31",
+    "town": "Kraków"
+     },
+
+     {
+    "id": 8,
+    "brand": "Dodge",
+    "model": "Challenger",
+    "year": "2017",
+    "img": "https://ag-spots-2017.o.auroraobjects.eu/2017/08/12/dodge-challenger-srt-8-hellcat-2017-c549212082017045010_1.jpg",
+    "description": "brak limitu kilometrów w Polsce*, podstawowe ubezpieczenie, pełna ochrona w atrakcyjnej cenie",
+    "engine": "5.7 HEMI",
+    "power": "500 km",
+    "time": "4,0 sekundy do 100 km/h",
+    "gearbox": "Automatyczna 8-biegowa",
+    "maxspeed": "295 km/h",
+    "date-start" : "2020-01-01",
+    "date-end" : "2030-12-31",
+    "town": "Kraków"
+     },
+
+     {
+    "id": 9,
+    "brand": "Dodge",
+    "model": "Charger",
+    "year": "2017",
+    "img": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InZ2azhoaGhrYmVkNS1PVE9NT1RPUEwiLCJ3IjpbeyJmbiI6IndnNGducXA2eTFmLU9UT01PVE9QTCIsInMiOiIxNiIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.erc7iYElJ0l02FzrljbVMQqQqo_vlWTzsKM0cBs6iLM/image;s=644x461",
+    "description": "brak limitu kilometrów w Polsce*, podstawowe ubezpieczenie, pełna ochrona w atrakcyjnej cenie",
+    "engine": "5.7 HEMI",
+    "power": "500 km",
+    "time": "4,2 sekundy do 100 km/h",
+    "gearbox": "Automatyczna 7-biegowa",
+    "maxspeed": "290 km/h",
+    "date-start" : "2020-01-01",
+    "date-end" : "2030-12-31",
+    "town": "Kraków"
+     },
+
+     {
+    "id": 10,
+    "brand": "Nissan",
+    "model": "Skyline R34",
+    "year": "1999",
+    "img": "https://devil-cars.pl/storage/images/LpmMWa1EwmcwDvhPed071mHlgTi3N4NOZ05VrCqc.jpeg",
+    "description": "brak limitu kilometrów w Polsce*, podstawowe ubezpieczenie, pełna ochrona w atrakcyjnej cenie",
+    "engine": "3.0 Turbo",
+    "power": "370 km",
+    "time": "4,8 sekundy do 100 km/h",
+    "gearbox": "Manualna 6-biegowa",
+    "maxspeed": "250 km/h",
+    "date-start" : "2020-01-01",
+    "date-end" : "2030-12-31",
+    "town": "Kraków"
+    },
+
+    {
+    "id": 11,
+    "brand": "Toyota",
+    "model": "Supra",
+    "year": "1999",
+    "img": "https://i.pinimg.com/originals/8d/c4/4a/8dc44a0b4921c0c530b4f90c18724868.jpg",
+    "description": "brak limitu kilometrów w Polsce*, podstawowe ubezpieczenie, pełna ochrona w atrakcyjnej cenie",
+    "engine": "3.0 R6 TwinTurbo",
+    "power": "460 km",
+    "time": "4,2 sekundy do 100 km/h",
+    "gearbox": "Manualna 6-biegowa",
+    "maxspeed": "260 km/h",
+    "date-start" : "2020-01-01",
+    "date-end" : "2030-12-31",
+    "town": "Kraków"
+    },
+
+    {
+    "id": 12,
+    "brand": "Nissan",
+    "model": "S15",
+    "year": "1995",
+    "img": "https://mklr.pl/uimages/services/motokiller/i18n/pl_PL/202006/$_nissan_240sx_s15_spec_r_$1591998640_by_Charakterek.jpg?1591998640",
+    "description": "brak limitu kilometrów w Polsce*, podstawowe ubezpieczenie, pełna ochrona w atrakcyjnej cenie",
+    "engine": "2.5 TwinTurbo",
+    "power": "270 km",
+    "time": "5.9 sekundy do 100 km/h",
+    "gearbox": "Manualna 6-biegowa",
+    "maxspeed": "244 km/h",
+    "date-start" : "2020-01-01",
+    "date-end" : "2030-12-31",
+    "town": "Kraków"
+     }
+
+
+
+    ]}

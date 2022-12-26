@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { CarsComponent } from './cars/cars.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CarReserveComponent } from './cars/car-reserve/car-reserve.component';
 
 
 @NgModule({
@@ -28,13 +29,13 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     ContactComponent,
     CarsComponent,
-
+    CarReserveComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
