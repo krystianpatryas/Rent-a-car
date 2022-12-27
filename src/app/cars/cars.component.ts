@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { CarsService } from '../services/cars.service';
 import { ActivatedRoute } from '@angular/router';
 
@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./cars.component.css'],
 })
 export class CarsComponent implements OnInit {
-  public cars: any;
+  @Input() public cars: any;
   public town: any;
   public dateStart: any;
   public dateEnd: any;
@@ -36,5 +36,5 @@ export class CarsComponent implements OnInit {
     );
   }
 
- 
+
 }
