@@ -11,7 +11,7 @@ export class CarsService {
 
   constructor(private http: HttpClient) {}
 
-  public getCars(town?: string, dateStart? : string, dateEnd?: string): Observable<Car[]> {
+  public getCars(town?: string, dateStart? : string, dateEnd?: string, id? : string): Observable<Car[]> {
     let url = myUrl;
 
     if (town) {
@@ -23,5 +23,10 @@ export class CarsService {
     }
     console.log(url)
     return this.http.get<Car[]>(url);
+  }
+
+  public getCar(id: string): Observable<Car> {
+    console.log(`${myUrl}/${id}`);
+    return this.http.get<Car>(`${myUrl}/${id}`)
   }
 }

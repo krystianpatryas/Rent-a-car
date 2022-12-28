@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./cars.component.css'],
 })
 export class CarsComponent implements OnInit {
-  @Input() public cars: any;
+  public cars: any;
   public town: any;
   public dateStart: any;
   public dateEnd: any;
