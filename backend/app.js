@@ -44,7 +44,7 @@ app.get("/cars", (req, res, next) => {
 });
 
 app.get("/cars/:id", (req, res, next) => {
-  Car.find({ _id: req.params.id }).then((car) => res.json(car));
+  Car.findOne({ _id: req.params.id }).then((car) => res.json(car));
 });
 
 module.exports = app;
