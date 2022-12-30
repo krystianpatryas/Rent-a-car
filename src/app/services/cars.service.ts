@@ -11,7 +11,7 @@ export class CarsService {
 
   constructor(private http: HttpClient) {}
 
-  public getCars(town?: string, dateStart? : string, dateEnd?: string, id? : string): Observable<Car[]> {
+  public getCars(town?: string, dateStart? : string, dateEnd?: string): Observable<Car[]> {
     let url = myUrl;
 
     if (town) {
