@@ -43,13 +43,11 @@
           </tr>
         </table>
         <div class="d-flex justify-content-center w-100">
-          <button type="button" class="btn btn-primary p-2 border-dark" routerLink="{{car._id}}">Sprawdź dostępność w
+          <button type="button" class="btn btn-primary p-2 border-dark" routerLink="{{car._id}}"
+            [queryParams]="{town: town, dateStart: dateStart, dateEnd: dateEnd}">Sprawdź dostępność w
             wybranym przez siebie terminie!</button>
         </div>
       </div>
     </div>
   </div>
-
-
 </div>
-

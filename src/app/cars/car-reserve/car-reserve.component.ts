@@ -18,15 +18,14 @@ export class CarReserveComponent implements OnInit {
     private carsService: CarsService
   ) {}
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.id = this.route.snapshot.paramMap.get('id');
     this.getCar();
   }
 
-  getCar() {
-    this.carsService.getCar(this.id).subscribe((car) => {
+  private getCar() {
+    return this.carsService.getCar(this.id).subscribe((car) => {
       this.car = car;
-      console.log(this.car);
     });
   }
 }
