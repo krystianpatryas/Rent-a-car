@@ -28,4 +28,10 @@ export class CarReserveComponent implements OnInit {
       this.car = car;
     });
   }
-}
+
+  reserve() {
+    setTimeout(() => {
+      alert('Rezerwacja została zakończona!')
+    }, 1000)
+  }
+ }

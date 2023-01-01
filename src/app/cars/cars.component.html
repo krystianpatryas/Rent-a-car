@@ -43,9 +43,10 @@
           </tr>
         </table>
         <div class="d-flex justify-content-center w-100">
-          <button type="button" class="btn btn-primary p-2 border-dark" routerLink="{{car._id}}"
-            [queryParams]="{town: town, dateStart: dateStart, dateEnd: dateEnd}">Sprawdź dostępność w
-            wybranym przez siebie terminie!</button>
+          <button type="button" class="btn btn-primary p-2 border-dark" *ngIf="town" routerLink="{{car._id}}"
+            [queryParams]="{town: town, dateStart: dateStart, dateEnd: dateEnd}">Przejdź do rezerwacji!</button>
+            <button type="button" class="btn btn-primary p-2 border-dark" *ngIf="!town" routerLink="/"
+            >Wybierz termin rezerwacji!</button>
         </div>
       </div>
     </div>

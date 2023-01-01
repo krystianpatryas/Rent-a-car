@@ -17,3 +17,15 @@ img {
 .row {
   margin: 80px 10px 100px 10px;
 }
+
+span {
+  font-size: 20px;
+}
+
+p {
+  font-weight: bold;
+}
+
+td:nth-child(even) {
+  font-weight:600;
+}

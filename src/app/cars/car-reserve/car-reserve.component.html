@@ -3,7 +3,10 @@
     <h2>Rezerwacja samochodu: </h2>
     <img class="col-xl-4 col-lg-4 col-10" [src]="car?.img">
     <div class="col-xl-6 col-lg-11 col-md-11 col-sm-11 col-11">
-      <table>
+      <span>Miasto odbioru samochodu: <p>{{car?.town}}</p></span>
+      <span>Data rozpoczęcia najmu:  <p>{{car?.dateStart}}</p></span>
+      <span>Data zakończenia najmu: <p>{{car?.dateEnd}}</p></span>
+      <table class="mt-3">
         <tr>
           <td>Marka:</td>
           <td>{{ car?.brand }}</td>
@@ -40,21 +43,9 @@
           <td>Predkość maksymalna:</td>
           <td>{{ car?.maxspeed }}</td>
         </tr>
-        <tr>
-          <td>Miasto odbioru:</td>
-          <td>{{ car?.town }}</td>
-        </tr>
-        <tr>
-          <td>Data rozpoczęcia najmu:</td>
-          <td>{{ car?.dateStart }}</td>
-        </tr>
-        <tr>
-          <td>Data zakończenia najmu:</td>
-          <td>{{ car?.dateEnd }}</td>
-        </tr>
       </table>
       <div class="mt-4">
-        <button type="button" class="btn btn-success p-2 border-dark">Zarezerwuj!</button>
+        <button type="button" class="btn btn-success p-2 border-dark" (click)="reserve()">Zarezerwuj!</button>
       </div>
     </div>
   </div>
