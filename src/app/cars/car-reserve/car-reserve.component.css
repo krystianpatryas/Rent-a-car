@@ -14,7 +14,7 @@ img {
   display: flex;
 }
 
-.row {
+.car-info {
   margin: 80px 10px 100px 10px;
 }
 
@@ -29,3 +29,4 @@ p {
 td:nth-child(even) {
   font-weight:600;
 }
+

@@ -31,7 +31,7 @@ export class CarReserveComponent implements OnInit {
 
   reserve() {
     setTimeout(() => {
-      alert('Rezerwacja została zakończona!')
+      alert('Rezerwacja została zakończona! Dziękujemy za korzystanie z fikcyjnej strony :) Krystian Patryas')
     }, 1000)
   }
  }

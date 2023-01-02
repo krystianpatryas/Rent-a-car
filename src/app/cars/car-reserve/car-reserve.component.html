@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <div class="row">
+  <div class="row car-info">
     <h2>Rezerwacja samochodu: </h2>
     <img class="col-xl-4 col-lg-4 col-10" [src]="car?.img">
     <div class="col-xl-6 col-lg-11 col-md-11 col-sm-11 col-11">
@@ -44,8 +44,18 @@
           <td>{{ car?.maxspeed }}</td>
         </tr>
       </table>
-      <div class="mt-4">
-        <button type="button" class="btn btn-success p-2 border-dark" (click)="reserve()">Zarezerwuj!</button>
-      </div>
+      <form #form="ngForm" (ngSubmit)="reserve()">
+          <div class="row mt-4">
+            <h3>Dane odbiorcy:</h3>
+            <label  for="name">Imię i nazwisko:</label>
+            <input  type="text" id="name" #name placeholder="Wpisz swoje imię i nazwisko" required>
+            <label for="email">Adres e-mail:</label>
+            <input  id="email" type="email" placeholder="Wpisz adres e-mail..." name="email" ngModel email #email="ngModel" required />
+            <div class="mt-4">
+              <button type="submit" class="btn btn-success p-2 border-dark" [disabled]="!form.valid">Zarezerwuj!</button>
+            </div>
+          </div>
+        </form>
+
     </div>
   </div>
