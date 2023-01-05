@@ -23,7 +23,7 @@
         <input class= "input-text col" type="date" [(ngModel)]="dateEnd">
       </div>
     <br>
-    <button type="button" class="btn btn-secondary p-2 border-light" [routerLink]="['/cars']" [queryParams]="{town: town, dateStart: dateStart, dateEnd: dateEnd}" [disabled]="!town || !dateStart || !dateEnd" >Zatwierdź</button>
+    <button type="button" class="btn p-2 border-light" [routerLink]="['/cars']" [queryParams]="{town: town, dateStart: dateStart, dateEnd: dateEnd}" [disabled]="!town || !dateStart || !dateEnd" >Zatwierdź</button>
     </div>
     </div>
     </div>

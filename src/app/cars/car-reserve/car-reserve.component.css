@@ -30,3 +30,12 @@ td:nth-child(even) {
   font-weight:600;
 }
 
+.btn {
+  background-color: rgb(20, 70, 160);
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: rgb(52, 107, 211);
+}

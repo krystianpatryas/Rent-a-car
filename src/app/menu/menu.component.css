@@ -49,3 +49,15 @@ i {
 select, input{
   padding-left: 10px;
 }
+
+.btn {
+  background-color: rgb(7, 80, 129);
+  color: white;
+  transition: 0.3s ease-in-out;
+  width: 120px;
+}
+
+.btn:hover {
+  background-color: rgb(5, 54, 87);
+
+}
