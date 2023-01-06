@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CarsService } from '../services/cars.service';
 import { ActivatedRoute } from '@angular/router';
 
@@ -35,6 +35,4 @@ export class CarsComponent implements OnInit {
       }
     );
   }
-
-
 }

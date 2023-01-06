@@ -13,8 +13,6 @@ export class AboutUsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-   goToTop() {}
-
   subscribe() {
     const paragraph = document.getElementById('sub-text');
     if (paragraph != null) {

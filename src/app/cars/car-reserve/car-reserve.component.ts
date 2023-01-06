@@ -1,10 +1,7 @@
-import { HttpClient } from '@angular/common/http';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Car } from '../../globals/Car';
-import { Observable } from 'rxjs';
-import { myUrl } from 'src/app/url/url';
 import { CarsService } from 'src/app/services/cars.service';
+
 @Component({
   selector: 'app-car-reserve',
   templateUrl: './car-reserve.component.html',
@@ -13,6 +10,7 @@ import { CarsService } from 'src/app/services/cars.service';
 export class CarReserveComponent implements OnInit {
   id: string;
   car: any;
+
   constructor(
     private route: ActivatedRoute,
     private carsService: CarsService
@@ -31,7 +29,9 @@ export class CarReserveComponent implements OnInit {
 
   reserve() {
     setTimeout(() => {
-      alert('Rezerwacja została zakończona! Dziękujemy za korzystanie z fikcyjnej strony :) Krystian Patryas')
-    }, 1000)
+      alert(
+        'Rezerwacja została zakończona! Dziękujemy za korzystanie z fikcyjnej strony :) Krystian Patryas'
+      );
+    }, 1000);
   }
- }
+}

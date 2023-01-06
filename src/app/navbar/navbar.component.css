@@ -1,16 +1,14 @@
 * {
   box-sizing: border-box;
-  margin: 0 ;
+  margin: 0;
   padding: 0;
-
 }
 
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700");
 html,
 body {
-    font-family: "Quicksand", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
-
 
 #navbar {
   background-color: rgba(36, 19, 6, 0.801);
@@ -22,7 +20,6 @@ body {
   z-index: 1;
 }
 
-
 .icon {
   max-height: 45px;
   border-radius: 5px;
@@ -33,7 +30,7 @@ body {
   height: 100vh;
   background-image: url(https://greatloveart.com/wp-content/uploads/2021/02/lamborghini-wallpaper-hd-1080p.jpg);
   background-position: center top;
-	background-size:cover;
+  background-size: cover;
 }
 
 body {
@@ -41,14 +38,13 @@ body {
   padding: 0;
 }
 
-
 .brand-title {
-  font-size: 1.5rem;
-  margin: .5rem;
+  font-size: 24px;
+  margin: 8px;
 }
 
 .brand-title a {
-  color:white;
+  color: white;
   text-decoration: none;
 }
 
@@ -59,7 +55,7 @@ body {
   padding: 1rem;
   height: 100%;
   margin-right: 30px;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .nav-link:last-child {
@@ -70,9 +66,11 @@ body {
   background-color: rgba(202, 194, 194, 0.445);
 }
 
-.scrolled-down{
-  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
 }
-.scrolled-up{
-  transform:translateY(0); transition: all 0.3s ease-in-out;
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
 }

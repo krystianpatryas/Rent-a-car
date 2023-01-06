@@ -1,20 +1,18 @@
 * {
   box-sizing: border-box;
-  margin:0;
+  margin: 0;
   padding: 0;
 }
 
-
 .home {
   height: 100vh;
-  background-image: url('https://i.pinimg.com/originals/34/7c/6e/347c6e5b8d46d7f2d14ae0c14948b71c.jpg');
+  background-image: url("https://i.pinimg.com/originals/34/7c/6e/347c6e5b8d46d7f2d14ae0c14948b71c.jpg");
   background-position: center top;
-  background-size:cover;
-  display:flex;
+  background-size: cover;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 .image-text {
   background-color: rgba(167, 105, 54, 0.8);
@@ -31,7 +29,7 @@
 }
 
 i {
-  color:black;
+  color: black;
   margin: 3px;
 }
 
@@ -42,11 +40,12 @@ i {
 }
 
 .input-text {
-  border:none;
-  border-radius:5px;
+  border: none;
+  border-radius: 5px;
 }
 
-select, input{
+select,
+input {
   padding-left: 10px;
 }
 
@@ -59,5 +58,4 @@ select, input{
 
 .btn:hover {
   background-color: rgb(5, 54, 87);
-
 }

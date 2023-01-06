@@ -8,25 +8,24 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class CarsService {
-
   constructor(private http: HttpClient) {}
 
-  public getCars(town?: string, dateStart? : string, dateEnd?: string): Observable<Car[]> {
+  public getCars(town?: string, dateStart?: string, dateEnd?: string): Observable<Car[]> {
     let url = myUrl;
 
     if (town) {
       url += `?town=${town}`;
-    }  if (dateStart) {
-      url += `&dateStart=${dateStart}`
-    }  if (dateEnd) {
-      url += `&dateEnd=${dateEnd}`
     }
-    console.log(url)
+    if (dateStart) {
+      url += `&dateStart=${dateStart}`;
+    }
+    if (dateEnd) {
+      url += `&dateEnd=${dateEnd}`;
+    }
     return this.http.get<Car[]>(url);
   }
 
   public getCar(id: string): Observable<Car> {
-    console.log(`${myUrl}/${id}`);
-    return this.http.get<Car>(`${myUrl}/${id}`)
+    return this.http.get<Car>(`${myUrl}/${id}`);
   }
 }

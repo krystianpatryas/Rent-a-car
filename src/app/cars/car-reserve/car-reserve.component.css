@@ -27,7 +27,7 @@ p {
 }
 
 td:nth-child(even) {
-  font-weight:600;
+  font-weight: 600;
 }
 
 .btn {

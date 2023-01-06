@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -15,7 +14,6 @@ import { ContactComponent } from './contact/contact.component';
 import { CarsComponent } from './cars/cars.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CarReserveComponent } from './cars/car-reserve/car-reserve.component';
-
 
 @NgModule({
   declarations: [
@@ -31,13 +29,8 @@ import { CarReserveComponent } from './cars/car-reserve/car-reserve.component';
     CarsComponent,
     CarReserveComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule,
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

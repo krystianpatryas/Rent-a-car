@@ -1,16 +1,17 @@
 * {
- box-sizing: border-box;
- padding: 0;margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 .group {
-  display:flex;
+  display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 .item {
-  width:390px ;
+  width: 390px;
   margin: 80px 20px 20px 20px;
   border: #303030 1px solid;
   border-radius: 15px;
@@ -21,7 +22,7 @@
 }
 
 img {
-  width:370px;
+  width: 370px;
   height: 300px;
   margin: 10px;
 }
@@ -33,11 +34,11 @@ img {
 }
 
 table {
-  margin:0 10px;
+  margin: 0 10px;
 }
 
 .btn {
-  background-color: rgb(20, 70, 160);
+  background-color: rgb(46, 115, 243);
   color: white;
   transition: 0.3s ease-in-out;
 }
