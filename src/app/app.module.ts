@@ -15,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
 import { CarsComponent } from './cars/cars.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CarReserveComponent } from './cars/car-reserve/car-reserve.component';
+import { AdminPanelComponent } from './admin-panel/admin-panel.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { CarReserveComponent } from './cars/car-reserve/car-reserve.component';
     ContactComponent,
     CarsComponent,
     CarReserveComponent,
+    AdminPanelComponent,
   ],
   imports: [
     BrowserModule,

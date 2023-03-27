@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, tap } from 'rxjs';
 import { Car } from '../globals/Car';
 import { myUrl } from '../url/url';
 import { HttpClient } from '@angular/common/http';
@@ -21,12 +21,20 @@ export class CarsService {
     }  if (dateEnd) {
       url += `&dateEnd=${dateEnd}`
     }
-    console.log(url)
+    console.log(url);
     return this.http.get<Car[]>(url);
   }
 
   public getCar(id: string): Observable<Car> {
     console.log(`${myUrl}/${id}`);
     return this.http.get<Car>(`${myUrl}/${id}`)
+  }
+
+  public postCar(newCar: Car): Observable<Car> {
+    return this.http.post<Car>(myUrl, newCar)
+  }
+
+  public deleteCar(id: string) {
+  this.http.delete<Car>(myUrl + '/' + id).subscribe();
   }
 }

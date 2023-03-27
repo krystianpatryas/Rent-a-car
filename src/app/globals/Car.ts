@@ -1,9 +1,15 @@
 export interface Car {
+  _id: string;
   brand: string;
   model: string;
   year: number;
   img: string;
-  dateStart: Date;
-  dateEnd: Date;
+  description: string;
+  engine: string;
+  power: string;
+  time: string,
+  maxspeed: string;
+  dateStart: string;
+  dateEnd: string;
   town: string;
 }

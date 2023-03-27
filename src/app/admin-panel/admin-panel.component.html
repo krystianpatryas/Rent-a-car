@@ -1,0 +1,83 @@
+<div class="container-fluid " [style.height]="showForm ? '120vh' : '100vh'" >
+    <div *ngIf="!showForm && !showDeletingList" class="menu row ">
+        <h2> Witaj adminie! Wybierz co chcesz zrobić.</h2>
+        <div class="add-car">
+          <h4>Dodaj samochód</h4>
+              <button (click)="showForm = !showForm"  >Dodaj</button>
+        </div>
+        <div class="delete-car">
+          <h4>Usuń samochód</h4>
+          <button (click)="showDeletingList = !showDeletingList">Usuń</button>
+        </div>
+    </div>
+    <div *ngIf="showForm" class="form" >
+      <h3 id="form">Formularz</h3>
+      <form (ngSubmit)="post(addCarForm.value)" #addCarForm="ngForm">
+        <div class="form-group">
+          <label for="brand">Marka</label>
+          <input type="text" placeholder="np. BMW" id="brand" class="form-control" ngModel name="brand" required>
+        </div>
+        <div class="form-group">
+          <label for="model">Model</label>
+          <input type="text" id="model" placeholder="np. M3" class="form-control" ngModel name="model" required>
+        </div>
+        <div class="form-group">
+          <label for="year">Rok produkcji</label>
+          <input type="text" id="year" placeholder="np. 2022" class="form-control" ngModel name="year" required>
+        </div>
+        <div class="form-group">
+          <label for="img">URL do zdjęcia</label>
+          <input type="text" id="img" placeholder="Adres www." class="form-control" ngModel name="img" required>
+        </div>
+        <div class="form-group">
+          <label for="description">Opis</label>
+          <input type="text" id="description" placeholder="np. brak limitu kilometrów w Polsce" class="form-control" ngModel name="description" required>
+        </div>
+        <div class="form-group">
+          <label for="engine">Silnik</label>
+          <input type="text" id="engine" placeholder="np. 3.0 R6 TwinTurbo" class="form-control" ngModel name="engine" required>
+        </div>
+        <div class="form-group">
+          <label for="power">Moc</label>
+          <input type="text" id="power" placeholder="np. 420 km" class="form-control" ngModel name="power" required>
+        </div>
+        <div class="form-group">
+          <label for="time">Czas do 100 km/h</label>
+          <input type="text" id="time"  placeholder="np. 4,2 sekundy do 100 km/h" class="form-control" ngModel name="time" required>
+        </div>
+        <div class="form-group">
+          <label for="maxspeed">Prędkość maksymalna</label>
+          <input type="text" id="maxspeed"  placeholder="np. 260 km/h" class="form-control" ngModel name="maxspeed" required>
+        </div>
+        <div class="form-group">
+          <label for="dateStart">Początek dostępności</label>
+          <input type="text" id="dateStart"  placeholder="RRRR-MM-DD" class="form-control" ngModel name="dateStart" required>
+        </div>
+        <div class="form-group">
+          <label for="dateEnd">Koniec dostępności</label>
+          <input type="text" id="dateEnd" placeholder="RRRR-MM-DD" class="form-control" ngModel name="dateEnd" required>
+        </div>
+        <div class="form-group">
+          <label for="town">Miasto</label>
+          <input type="text" id="town"  placeholder="np. Kraków" class="form-control" ngModel name="town" required>
+        </div>
+        <div class="send">
+          <button class="btn btn-success btn-md pick" id="submitButton" type="submit"  >Wyślij</button>
+          <button class="btn btn-light btn-md p-1"(click)="showForm = !showForm" >Powrót do menu</button>
+        </div>
+      </form>
+    </div>
+    <div class="list" *ngIf="showDeletingList" >
+      <div class="input-group mb-3 row">
+        <label for="selectCar" class="mb-2"> Wybierz samochód do usunięcia </label>
+        <select class="form-select" id="inputGroupSelect01" name="selectCar" [(ngModel)]="selectedCar">
+          <option *ngFor="let car of cars"> {{car.brand}} {{car.model}}, {{car.year}}, {{car._id}}</option>
+        </select>
+        <div class="d-flex justify-content-center align-items-center mt-3">
+          <button class="btn btn-danger " (click)="delete(selectedCar)">Usuń samochód </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+

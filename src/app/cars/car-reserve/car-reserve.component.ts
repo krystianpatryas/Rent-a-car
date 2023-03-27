@@ -11,6 +11,7 @@ import { CarsService } from 'src/app/services/cars.service';
   styleUrls: ['./car-reserve.component.css'],
 })
 export class CarReserveComponent implements OnInit {
+  
   id: string;
   car: any;
   constructor(
