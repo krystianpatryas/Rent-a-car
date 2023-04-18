@@ -11,7 +11,7 @@ working on admin panel for adding and deleting cars.
 update:
 
 adding cars done. 
-deleting cars done.   
+deleting cars done.    
    
   
  
